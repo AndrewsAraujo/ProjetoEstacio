@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Livraria Estácio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="login1.css">
+</head>
+<body>
+    <div class="navbar show-menu">
+        <div class="header-index-content">
+            <h1 class="logo">Livraria<span>Estácio</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="login.html" class="active">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <img src="img/menu.png" class="menu-button">
+                <img src="img/cart.png" id="cart-icon">
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Acesse sua conta</h2>
+                <p>Entre para gerenciar seus itens e favoritos</p>
+            </div>
+            <div class="login-tabs">
+                <button class="tab-btn active" >Login</button>
+                <button class="tab-btn">Cadastro</button>
+            </div>
+            <form action="" class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button type="submit" class="btn-submit">Entrar</button>
+            </form>
+            <div class="tab-content-hidden">
+                <form class="register-form">
+                    <div class="form-group">
+                        <label for="name">Nome completo</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" required>
+                    </div class="form-group">
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar senha</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <label for="terms">Concordo com os termos de uso</label>
+                    </div>
+                    <button type="submit" class="btn-creat-account">Criar conta</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="login1.js"></script>
+</body>
+</html>

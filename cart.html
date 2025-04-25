@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Livraria Estácio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cart.css">
+</head>
+<body>
+    <div class="navbar show-menu">
+        <div class="header-index-content">
+            <h1 class="logo">Livraria<span>Estácio</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="login.html">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <img src="img/menu.png" class="menu-button">
+                <img src="img/cart.png" id="cart-icon">
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="cart-container">
+            <h1 class="cart-title">Meu Carrinho</h1>
+            
+            <div class="cart-header">
+                <div>Produto</div>
+                <div>Quantidade</div>
+                <div>Subtotal</div>
+                <div></div>
+            </div>
+            
+            <div id="cart-items" class="cart-items">
+                <!-- Itens do carrinho serão carregados via JavaScript -->
+            </div>
+            
+            <div class="cart-summary">
+                <h3>Resumo do Pedido</h3>
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span id="cart-total">R$ 0,00</span>
+                </div>
+                <div class="summary-line">
+                    <span>Frete</span>
+                    <span>Grátis</span>
+                </div>
+                <div class="summary-line total">
+                    <span>Total</span>
+                    <span id="cart-total-with-shipping">R$ 0,00</span>
+                </div>
+                
+                <div class="checkout-actions">
+                    <a href="index.html" class="continue-shopping">Continuar comprando</a>
+                    <button id="checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="gray-background">
+        <div class="page-inner-content footer-content">
+            <div class="dowload-options">
+                <p>Baixe nossa aplicação</p>
+                <p>Baixe nossa aplicação para Android e iOS</p>
+                <div>
+                    <img src="img/app-store.png" alt="">
+                    <img src="img/play-store.png" alt="">
+                </div>
+            </div>
+
+            <div class="logo-footer">
+                <h1 class="logo">Livraria<span>Estácio</span></h1>
+                <p>Sua fonte de conhecimento, cultura e inspiração</p>
+            </div>
+
+            <div class="links-footer">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog Post</li>
+                    <li>Políticas</li>
+                    <li>Torne-se afiliado</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="page-inner-content">
+        <div class="page-inner-content copyright">
+            <p>Copyright - Andrews - Allyson - Todos Direitos Reservados</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

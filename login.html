@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Livraria Estácio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="navbar show-menu">
+        <div class="header-index-content">
+            <h1 class="logo">Livraria<span>Estácio</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="login.html" class="active">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <img src="img/menu.png" class="menu-button">
+                <img src="img/cart.png" id="cart-icon">
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Acesse sua conta</h2>
+                <p>Entre para gerenciar seus pedidos e favoritos</p>
+            </div>
+            <div class="login-tabs">
+                <button class="tab-btn active" data-tab="login">Login</button>
+                <button class="tab-btn" data-tab="register">Cadastro</button>
+            </div>
+            
+            <div class="tab-content" id="login-tab">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" required>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+                    <button type="submit" class="btn-primary">Entrar</button>
+                </form>
+                <div class="social-login">
+                    <p>Ou continue com</p>
+                    <div class="social-buttons">
+                        <button class="social-btn google">Google</button>
+                        <button class="social-btn facebook">Facebook</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="register-tab">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-name">Nome completo</label>
+                        <input type="text" id="register-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Senha</label>
+                        <input type="password" id="register-password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">Confirmar senha</label>
+                        <input type="password" id="register-confirm" name="confirm-password" required>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Concordo com os <a href="#">termos de uso</a></label>
+                    </div>
+                    <button type="submit" class="btn-create-account">Criar conta</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="gray-background">
+        <div class="page-inner-content footer-content">
+            <div class="dowload-options">
+                <p>Baixe nossa aplicação</p>
+                <p>Baixe nossa aplicação para Android e iOS</p>
+                <div>
+                    <img src="img/app-store.png" alt="">
+                    <img src="img/play-store.png" alt="">
+                </div>
+            </div>
+
+            <div class="logo-footer">
+                <h1 class="logo">Livraria<span>Estácio</span></h1>
+                <p>Sua fonte de conhecimento, cultura e inspiração</p>
+            </div>
+
+            <div class="links-footer">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog Post</li>
+                    <li>Políticas</li>
+                    <li>Torne-se afiliado</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="page-inner-content">
+        <div class="page-inner-content copyright">
+            <p>Copyright - Andrews - Allyson - Todos Direitos Reservados</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
